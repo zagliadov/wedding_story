@@ -1,2 +1,196 @@
-body
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Sansita+Swashed:wght@300&display=swap');
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html,
+body 
+    height: 100%
+    width: 100%
+    overflow-x: hidden
+
+h1, h2, h3, h4, h5, .lobster__font-family
+    font-family: 'Lobster Two', cursive
+    font-family: 'Sansita Swashed', cursive
+    font-weight: 400
+    letter-spacing: 2px
+
+.container
+    margin-right: auto
+    margin-left: auto
+    position: relative
+    display: flex
+    flex-direction: column
+    height: 100%
+
+.container:before,
+.container:after 
+    display: table
+    content: " " 
+
+.wrapper
+    flex: 1 0 auto
+
+.footer
+    flex: 0 0 auto
+    height: 144px
+    background-color: #a81622
+
+.header
+    display: flex
+    flex-direction: column
+
+.logo,
+.nav    
+    border: 1px solid red
+    height: 100px
+.logo
+    text-align: center
+    height: auto
+    padding-top: 20px
+    background-color: #c5c2c2
+    span 
+        color: red
+        text-transform: uppercase
+        font-size: 50px
+    h2
+        padding-bottom: 20px
+        padding-top: 20px
+        
+.nav
+    display: flex
+    justify-content: center
+    padding-top: 20px
+    height: 150px
+    background-color:  #a81622
+    z-index: -6
+
+.menu
+    height: 45px
+    width: 60%
+    padding-left: 20px
+    border-radius: 6px
     background-color: #fff
+.main   
+    z-index: -3
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 1000px
+    background: #c5c2c2 url(../img/floral-bg.png) no-repeat 0% 100%
+
+.carousel
+    position: relative
+    width: 90%
+    height: auto
+    margin-top: -40px
+    z-index: -2
+
+.carousel__container
+    position: relative
+    display: flex
+    background: #ffffff
+    border-radius: 10px
+    padding: 20px
+    height: auto
+
+.carousel__item
+    display: none
+    width: 100%
+
+.active__img
+    display: block
+
+.carousel__descr
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    position: absolute
+    bottom: 25px
+    left: 25px
+    width: 40%
+    height: 40%
+    background-color: #ffffff7e
+    border-radius: 5px
+    p
+        white-space: nowrap
+        overflow: hidden
+        padding: 5px
+        text-overflow: ellipsis
+    span
+        width: 100%
+        display: block
+        font-size: 10px
+        padding-left: 5px
+
+
+.carousel__container:before,
+.carousel__container:after
+    content: ''
+    position: absolute
+    bottom: 6px
+    left: 0
+    display: block
+    box-shadow: 5px 5px 10px #000
+    border-radius: 50%
+    width: 50%
+    height: 10px
+    transform: rotate(-4deg)
+    z-index: -1
+
+.carousel__container:after
+    transform: rotate(4deg)
+    left: auto
+    right: 0
+
+
+
+.carousel__container_control
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 25px
+    padding-bottom: 15px
+    height: auto
+
+.control-item
+    margin-left: 10px
+    height: 30px
+    width: 30px
+    background-color:  #908c8c
+    box-shadow: inset 1px 1px 2px #383737
+    border-radius: 50%
+
+.active
+    height: 30px
+    width: 30px
+    border-radius: 50%
+    background-color: #a81622
+
+.preparation
+    width: 90%
+    height: 300px
+    border: 1px solid black
+    background-color: #ffffff
+
+
+
+
+
+
+
+
+
+
+
+
+.comments
+    width: 90%
+    height: 350px
+    border: 1px solid black
+
+
